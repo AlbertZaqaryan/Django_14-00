@@ -39,3 +39,8 @@ core-urls.py-ը կցում ենք main-ի urls.py-ին
 աշխատացնում ենք project-ը
 8) python manage.py runserver հրամանով
 ----------------------------------------------------------------------
+
+
+
+HTML/CSS LINK
+https://www.youtube.com/watch?v=CvEttNvty0U
