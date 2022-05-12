@@ -6,4 +6,8 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    number = request.POST['number']
+    number = int(number)
+    res = number ** 2
+
+    return render(request, 'about.html', {'res':res})

@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>BAREV</h1>
-    <a href="{% url 'about' %}"><button>About</button></a>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block text %}
+    <h4 class="text-white">Home</h4>
+    <p class="text-muted">My home page</p>
+{% endblock %}
+
+{% block content %}
+    <form action="{% url 'about' %}" method="POST">
+        {% csrf_token %}
+        Enter number: <input type="text" name="number" id=""><br><br>
+        <input type="submit">
+    </form>
+   
+{% endblock %}
